@@ -7,9 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= link_to "Group Fit", root_path %>
 
-  <%= link_to "Sign In", new_session_path %>
-  <%= link_to "Sign Up", new_user_path %>
+  <% if signed_in? %>
+    <%= link_to "Sign Out", session_path, medthod: :delete %>
+    <%= link_to "My Profile" %>
+  <% else %>
+    <%= link_to "Sign In", new_session_path %>
+    <%= link_to "Sign Up", new_user_path %>
+  <% end %>
 <%= yield %>
 
 </body>
