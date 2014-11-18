@@ -1,0 +1,8 @@
+<h3> What is your group name? </h3>
+<%= form_for @group do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <%= form.submit %>
+<% end %>

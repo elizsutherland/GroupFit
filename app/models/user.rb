@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
   validates :city, presence: true
   validates :state, presence: true
   validates :image_url, presence: true
+
+  has_many :group_memberships
+  has_many :groups, through: :group_memberships
 end
