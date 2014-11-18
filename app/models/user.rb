@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
   validates :city, presence: true
   validates :state, presence: true
+  validates :image_url, presence: true
 end
