@@ -18,6 +18,22 @@
     <%= form.password_field :password %>
   </div>
   <div>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+  <div>
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+  <div>
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+  <div>
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+  <div>
     <%= form.submit "Sign up" %>
   </div>
 <% end %>
