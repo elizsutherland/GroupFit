@@ -1,0 +1,24 @@
+<%= form_for [group, challenge] do |form| %>
+  <div>
+  <%= form.label :statement %>
+  <%= form.text_field :statement %>
+  </div>
+
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label "Start" %>
+    <%= form.date_field :start_date %>
+  </div>
+
+  <div>
+    <%= form.label "End" %>
+    <%= form.date_field :end_date %>
+  </div>
+  <div>
+  <%= form.submit "Create" %>
+  </div>
+<% end %>

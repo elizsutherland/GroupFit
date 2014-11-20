@@ -1,5 +1,7 @@
 <h2><%= @group.title %></h2>
 
+<%= link_to "Create Challenge", new_group_challenge_path(@group) %>
+<%= render @challenges %>
 <h3>Members</h3>
 <ul>
   <% @users.each do |user| %>
