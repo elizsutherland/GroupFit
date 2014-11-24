@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
 
   has_many :group_memberships
   has_many :groups, through: :group_memberships
+  has_many :workouts
 
   def membership_for(group)
     group_memberships.where(group_id: group.id).first

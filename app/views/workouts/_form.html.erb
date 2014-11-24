@@ -1,0 +1,17 @@
+<%= form_for @workouts do |form| %>
+  <div>
+    <%= form.label :place %>
+    <%= form.text_field :place %>
+  </div>
+  <div>
+    <%= form.label :activity %>
+    <%= form.text_field :activity %>
+  </div>
+  <div>
+    <%= form.label "Date" %>
+    <%= form.date_field :date %>
+  </div>
+  <div>
+    <%= form.submit "Add Workout" %>
+  </div>
+<% end %>
