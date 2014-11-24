@@ -15,6 +15,11 @@ class ChallengesController < ApplicationController
     end
   end
 
+  def show
+    @challenge = Challenge.find(params[:id])
+    @workouts = @challenge.workouts
+  end
+
   private
 
   def load_group_from_url

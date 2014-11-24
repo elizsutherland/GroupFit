@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resources :group_memberships, only: [:create, :destroy]
     resources :challenges, only: [:create, :show, :new]
   end
-  resources :workouts, only: [:new, :create, :show]
+  resources :challenges, only: [:show] do
+    resources :workouts, only: [:new, :create]
+  end
 end

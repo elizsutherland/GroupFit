@@ -1,4 +1,4 @@
-<%= form_for @workouts do |form| %>
+<%= form_for [challenge, workout] do |form| %>
   <div>
     <%= form.label :place %>
     <%= form.text_field :place %>
