@@ -1,12 +1,27 @@
 <h2><%= @group.title %></h2>
 
 <%= link_to "Create Challenge", new_group_challenge_path(@group) %>
-<%= render @challenges %>
+
+<% if @group.current_challenge %>
+  <%= render @group.current_challenge %>
+<% else %>
+  <div>Set Challenge</div>
+<% end %>
+
 <h3>Members</h3>
 <ul>
   <% @users.each do |user| %>
     <li>
       <%= link_to user.first_name, user %>
+    </li>
+  <% end %>
+</ul>
+
+<h3>Previous Challenges</h3>
+<ul>
+  <% @challenges.each do |challenge| %>
+    <li>
+      <%= link_to challenge.title, challenge %>
     </li>
   <% end %>
 </ul>

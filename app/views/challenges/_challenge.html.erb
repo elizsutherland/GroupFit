@@ -1,15 +1,6 @@
-<ul>
-  <li>
-    <%= link_to challenge.title, challenge %>
-  </li>
-  <li>
-    <%= challenge.statement %>
-  </li>
-  <li>
-    <%= challenge.start_date %>
-  </li>
-  <li>
-    <%= challenge.end_date %>
-  </li>
-</ul>
+<%= link_to challenge.title, challenge %> |
+Statement: <%= challenge.statement %> |
+Start Date: <%= challenge.start_date %> -
+End Date: <%= challenge.end_date %>
 
+<%= render challenge.workouts %>

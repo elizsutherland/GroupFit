@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     resources :challenges, only: [:create, :show, :new]
   end
   resources :challenges, only: [:show] do
-    resources :workouts, only: [:new, :create]
+    resources :workouts, only: [:new, :create, :edit]
   end
 end

@@ -26,8 +26,6 @@ class WorkoutsController < ApplicationController
       :place,
       :activity,
       :date
-    ).merge(
-      user_id: current_user.id
-    )
+    ).merge(user_id: current_user.id)
   end
 end
