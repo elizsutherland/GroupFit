@@ -19,7 +19,9 @@ class GroupsController < ApplicationController
   def show
     @group = Group.find(params[:id])
     @users = @group.users
+    @challenge = @group.current_challenge
     @challenges = @group.challenges
+    @timeline = WorkoutTimeline.new(@challenge)
   end
 
   private

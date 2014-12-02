@@ -1,12 +1,14 @@
 <h2><%= @group.title %></h2>
 
-<%= link_to "Create Challenge", new_group_challenge_path(@group) %>
+<div>
+  <%= link_to "Create Challenge", new_group_challenge_path(@group) %>
+</div>
 
-<% if @group.current_challenge %>
-  <%= render @group.current_challenge %>
-<% else %>
-  <div>Set Challenge</div>
-<% end %>
+<div>
+  <% if @group.current_challenge %>
+    <%= render "challenges/timeline", challenge: @challenge, timeline: @timeline %>
+  <% end %>
+</div>
 
 <h3>Members</h3>
 <ul>

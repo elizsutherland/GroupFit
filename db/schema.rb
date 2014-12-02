@@ -55,13 +55,13 @@ ActiveRecord::Schema.define(version: 20141124145817) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
   create_table "workouts", force: true do |t|
-    t.integer  "user_id",      null: false
-    t.integer  "challenge_id", null: false
-    t.string   "place"
-    t.date     "date",         null: false
-    t.string   "activity"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "user_id",                   null: false
+    t.integer  "challenge_id",              null: false
+    t.string   "place",        default: "", null: false
+    t.date     "date",                      null: false
+    t.string   "activity",     default: "", null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
 end

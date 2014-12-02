@@ -1,0 +1,16 @@
+<%= link_to challenge.title, challenge %> |
+Statement: <%= challenge.statement %> |
+Start Date: <%= challenge.start_date %> -
+End Date: <%= challenge.end_date %>
+
+<ul>
+<% 7.times do |days| %>
+  <% date = Date.today - days %>
+  <li>
+    <h3><%= date.strftime("%a") %></h3>
+    <% timeline.workouts_on(date).each do |workout| %>
+      <%= render workout %>
+    <% end %>
+  </li>
+<% end %>
+</ul>

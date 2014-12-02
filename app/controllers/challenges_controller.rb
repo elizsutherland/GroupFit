@@ -1,4 +1,8 @@
 class ChallengesController < ApplicationController
+  def index
+    @groups = Group.all
+  end
+
   def new
     @group = load_group_from_url
     @challenge = Challenge.new
