@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'neat'
+gem 'bourbon'
 gem 'pry'
 gem 'rails', '4.1.6'
 gem 'pg'
