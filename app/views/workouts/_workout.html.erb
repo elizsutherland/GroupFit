@@ -12,3 +12,10 @@
    Date: <%= workout.date %>
   </li>
 </ul>
+<div>
+  <% if current_user.likes?(workout) %>
+    <%= button_to "Unlike", workout_like_path(workout), method: :delete %>
+  <% else %>
+    <%= button_to "Like", workout_like_path(workout) %>
+<% end %>
+</div>

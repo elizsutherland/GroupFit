@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   resources :challenges, only: [:show] do
     resources :workouts, only: [:new, :create, :edit]
   end
+  resources :workouts, only: [:show] do
+    resource :like, only: [:create, :destroy]
+  end
 end
