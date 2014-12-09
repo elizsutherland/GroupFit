@@ -1,6 +1,6 @@
 <h2><%= @group.title %></h2>
 
-<% if current_user.admin_of?(group) %>
+<% if current_user.admin_of?(@group) %>
   <%= link_to "Edit", edit_group_path %>
   <%= link_to "Create Challenge", new_group_challenge_path(@group) %>
 <% end %>

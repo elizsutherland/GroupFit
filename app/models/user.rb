@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
     group_memberships.where(group_id: group.id).first
   end
 
+  def admin_of?(group)
+    group_memberships.find_by(group_id: group.id).admin?
+  end
+
   def self.all_except(user)
     where.not(id: user)
   end
