@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root "dashboards#index"
 
   resource :session, only: [:new, :create, :destroy]
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:index, :new, :create, :show] do
+    resources :friendships, only: [:create, :destroy, :update]
+  end
   resources :groups do
     resources :group_memberships, only: [:create, :destroy]
     resources :challenges, only: [:create, :show, :new]
