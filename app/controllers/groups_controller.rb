@@ -40,6 +40,7 @@ class GroupsController < ApplicationController
     @group.destroy
     redirect_to groups_path
   end
+
   private
 
   def group_params

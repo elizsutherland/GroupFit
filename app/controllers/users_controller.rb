@@ -23,6 +23,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def admin_of?(group)
+    group_memberships.find_by(group_id: group_id).
+      admin?
+  end
+
   private
 
   def user_params
