@@ -9,7 +9,7 @@ class FriendshipsController < ApplicationController
 
   def update
     friend = load_friend_from_url
-    friendship = Friendship.for(current_user.id, friend_id)
+    friendship = Friendship.for(current_user.id, friend.id)
     friendship.update(confirmed: params[:confirmed])
     redirect_to friend
   end

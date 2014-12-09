@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
     group_memberships.where(group_id: group.id).first
   end
 
+  def self.all_except(user)
+    where.not(id: user)
+  end
+
   def likes?(workout)
     liked_workouts.include?(workout)
   end
@@ -30,7 +34,7 @@ class User < ActiveRecord::Base
     friend_ids += Friendship.
       where(friend_id: id, confirmed: true).
       pluck(:user_id)
-    User.where(id: buddy_ids)
+    User.where(id: friend_ids)
   end
 
   def pending_friends
