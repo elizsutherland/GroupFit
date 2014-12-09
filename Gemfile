@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'refills'
+gem 'bitters'
 gem 'neat'
 gem 'bourbon'
 gem 'pry'
