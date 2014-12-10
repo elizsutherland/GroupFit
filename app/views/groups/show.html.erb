@@ -5,12 +5,18 @@
   <%= link_to "Create Challenge", new_group_challenge_path(@group) %>
 <% end %>
 
-<div>
+<div class="timeline">
   <% if @group.current_challenge %>
     <%= render "challenges/timeline", challenge: @challenge, timeline: @timeline %>
   <% end %>
 </div>
 
+<div class="add-workout-group">
+  <h3>Add workout to timeline</h3>
+  <%= render "workouts/form", challenge: @challenge, workout: Workout.new %>
+</div>
+
+<div class="members">
 <h4>Members</h4>
 <ul>
   <% @users.each do |user| %>
@@ -19,7 +25,9 @@
     </li>
   <% end %>
 </ul>
+</div>
 
+<div class="previous-challenges">
 <h4>Previous Challenges</h4>
 <ul>
   <% @challenges.each do |challenge| %>
@@ -28,3 +36,4 @@
     </li>
   <% end %>
 </ul>
+</div>

@@ -1,0 +1,27 @@
+.add-workout-group {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 5em;
+}
+
+.members {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 2em;
+}
+
+.previous-challenges {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 2em;
+}
+
+.timeline {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 3em;
+  .challenge-statement {
+    border: 1px solid black;
+    padding: 3px;
+  }
+}
