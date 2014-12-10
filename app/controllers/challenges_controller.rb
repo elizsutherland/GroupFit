@@ -21,7 +21,7 @@ class ChallengesController < ApplicationController
 
   def show
     @challenge = Challenge.find(params[:id])
-    @workouts = @challenge.workouts
+    @workouts = @challenge.workouts.order("date desc")
   end
 
   private

@@ -1,4 +1,4 @@
 <h4><%= link_to @challenge.group.title, @challenge.group %></h4>
 <h4><%= @challenge.title %></h4>
 <%= link_to "Create Workout", new_challenge_workout_path(@challenge) %>
-<%= render @workouts.order("date desc") %>
+<%= render @workouts %>

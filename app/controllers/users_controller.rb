@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
     if @user.valid?
       sign_in(@user)
-      redirect_to user_path
+      redirect_to user_path(@user)
     else
       render :new
     end
@@ -21,6 +21,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @friendships = @user.friendships
   end
 
   private

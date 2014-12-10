@@ -20,6 +20,10 @@ class FriendshipsController < ApplicationController
     redirect_to friend
   end
 
+  def show
+    @friend = load_friend_from_url
+  end
+
   private
 
   def load_friend_from_url

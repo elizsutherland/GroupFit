@@ -27,6 +27,21 @@ class User < ActiveRecord::Base
     where.not(id: user)
   end
 
+  def friends_with?(potential_friend)
+    friend_ids = Friendship.
+      where(user_id: potential_friend.id, confirmed: true).
+      pluck(:friend_id)
+    friend_ids += Friendship.
+      where(friend_id: potential_friend.id, confirmed: true).
+      pluck(:user_id)
+    friendship = User.where(id: friend_ids)
+    if friendship == []
+      return false
+    else
+      return true
+    end
+  end
+
   def likes?(workout)
     liked_workouts.include?(workout)
   end

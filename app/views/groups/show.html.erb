@@ -18,22 +18,22 @@
 
 <div class="members">
 <h4>Members</h4>
-<ul>
+  <ul>
   <% @users.each do |user| %>
     <li>
       <%= link_to user.first_name, user %>
     </li>
   <% end %>
-</ul>
+  </ul>
 </div>
 
 <div class="previous-challenges">
-<h4>Previous Challenges</h4>
-<ul>
-  <% @challenges.each do |challenge| %>
+  <h4>Previous Challenges</h4>
+    <ul>
+      <% @challenges.each do |challenge| %>
     <li>
       <%= link_to challenge.title, challenge %>
     </li>
   <% end %>
-</ul>
+  </ul>
 </div>
