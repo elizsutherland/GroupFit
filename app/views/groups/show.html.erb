@@ -1,7 +1,7 @@
-<h2><%= @group.title %></h2>
+<h1><%= @group.title %></h1>
 
 <% if current_user.admin_of?(@group) %>
-  <%= link_to "Edit", edit_group_path %>
+  <%= link_to "Edit", edit_group_path %> |
   <%= link_to "Create Challenge", new_group_challenge_path(@group) %>
 <% end %>
 
@@ -11,7 +11,7 @@
   <% end %>
 </div>
 
-<h3>Members</h3>
+<h4>Members</h4>
 <ul>
   <% @users.each do |user| %>
     <li>
@@ -20,7 +20,7 @@
   <% end %>
 </ul>
 
-<h3>Previous Challenges</h3>
+<h4>Previous Challenges</h4>
 <ul>
   <% @challenges.each do |challenge| %>
     <li>

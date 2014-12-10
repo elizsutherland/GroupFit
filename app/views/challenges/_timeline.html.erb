@@ -1,8 +1,15 @@
-<%= link_to challenge.title, challenge %> |
-Statement: <%= challenge.statement %> |
+<ul>
+  <li>
+    <%= link_to challenge.title, challenge %>
+  </li>
+  <li>
+    Statement: <%= challenge.statement %>
+  </li>
+</ul>
 Start Date: <%= challenge.start_date %> -
 End Date: <%= challenge.end_date %>
 
+<%= render "workouts/form", challenge: @challenge, workout: Workout.new %>
 <ul>
 <% 7.times do |days| %>
   <% date = Date.today - days %>

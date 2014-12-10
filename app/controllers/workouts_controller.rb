@@ -9,7 +9,7 @@ class WorkoutsController < ApplicationController
     @workout = @challenge.workouts.new(workout_params)
 
     if @workout.save
-      redirect_to @challenge
+      redirect_to :back
     else
       render :new
     end

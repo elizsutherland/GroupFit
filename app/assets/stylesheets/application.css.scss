@@ -1,4 +1,14 @@
 @import "bourbon";
-@import "base/grid-settings",
-@import "neat",
+@import "base/grid-settings";
+@import "neat";
 @import "base/base";
+
+@import "index";
+
+body {
+  background-color: #F5E253;
+}
+
+#container {
+  @include outer-container;
+}
