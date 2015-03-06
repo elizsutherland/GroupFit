@@ -1,21 +1,21 @@
 Group Fit-
 
-During college, my friends and I stayed fit by working out together. As many of them moved away and left Boston, it became harder to find "workout friends" who enjoy the same activites. We tried making an excel sheet to motivate each other to work out but it was not efficient.
+  During college, my friends and I stayed fit by working out together. As many of them moved away and left Boston, it became harder to find "workout friends" who enjoy the same activites. We tried making an excel sheet to motivate each other to work out but it was not efficient.
 
-My goal with GroupFit is to create a fun, interactive program that allows friends to motivate each other to stay fit and healthy. It's done in a friendly, competitive way by creating groups of friends and setting a group goal. For example, "Let's get ready for summer! We will work out 4 days a week, for 3 months"!
+  My goal with GroupFit is to create a fun, interactive program that allows friends to motivate each other to stay fit and healthy. It's done in a friendly, competitive way by creating groups of friends and setting a group goal. For example, "Let's get ready for summer! We will work out 4 days a week, for 3 months"!
 
 Home Page-
 
-Users sign up for an account and login to the program where there are links to profile, friends, and groups.
+  Users sign up for an account and login to the program where there are links to profile, friends, and groups.
 
 Profile-
 
-The Profile shows the users profile picture as well as location. The profile also displays past workouts which include workout place, description, and date. IE Park, Run, 11/4/2014.
+  The Profile shows the users profile picture as well as location. The profile also displays past workouts which include workout place, description, and date. IE Park, Run, 11/4/2014.
 
 Groups-
 
-The Group page shows the different workout groups a user is apart of, for example, she may have a group of "College Pals" but also have a "Boston Friends" group. Within each seperate group there can be many group challenges such as "Fall" or "Winter Challnege." Each challenge has a start and end date. Once the challenge reaches the end date, the information is linked by the title to a different page. When a user enters his/her workout, the information is logged on the group challenge page as well as the user's profile page.
+  The Group page shows the different workout groups a user is apart of, for example, she may have a group of "College Pals" but also have a "Boston Friends" group. Within each seperate group there can be many group challenges such as "Fall" or "Winter Challnege." Each challenge has a start and end date. Once the challenge reaches the end date, the information is linked by the title to a different page. When a user enters his/her workout, the information is logged on the group challenge page as well as the user's profile page.
 
 Friends-
 
-Friends lists out all the different users. In order to be in a group together and see a friend's workout there must be a friend connection. Once the friend accepts the user's friend request, the user can see the friend's workouts and even has the option to "like" the workout as a way of motivating the friend.
+  Friends lists out all the different users. In order to be in a group together and see a friend's workout there must be a friend connection. Once the friend accepts the user's friend request, the user can see the friend's workouts and even has the option to "like" the workout as a way of motivating the friend.
